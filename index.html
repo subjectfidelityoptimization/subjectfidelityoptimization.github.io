@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="SFO">
+  <meta name="keywords" content="subject-driven tti">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Negative-Guided Subject Fidelity Optimization for Zero-Shot Subject-Dirven Generation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Negative-Guided Subject Fidelity Optimization for Zero-Shot Subject-Driven Generation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=M8RX0MEAAAAJ&hl=en">Chaehun Shin</a><sup>1,*</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=9EIn52wAAAAJ&hl=en">Jooyoung Choi</a><sup>1,*</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=AM9-E50AAAAJ&hl=en">Johan Barthelemy</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.co.kr/citations?user=6qTcgH0AAAAJ&hl=en">Jungbeom Lee</a><sup>3,&#8224</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=Bphl_fIAAAAJ&hl=en">Sungroh Yoon</a><sup>1,4,5,&#8224</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Data Science and AI Laboratory, ECE, Seoul National University,</span>
+            <span class="author-block"><sup>2</sup>NVIDIA,</span>
+            <span class="author-block"><sup>3</sup>Amazon,</span>
+            <span class="author-block"><sup>4</sup>Interdisciplinary Program in AI, Seoul National University</span>
+            <span class="author-block"><sup>5</sup>ASRI, INMC, ISRC, and AIIS, Seoul National University</span>
+          </div>
+          
+
+          <div>
+            * Equal contributions, &#8224 Corresponding authors
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2506.03621"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2506.03621"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon!)</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- <video id="teaser" autoplay muted loop playsinline height="100%"> -->
+      <img id="teaser" src="./static/images/teaser.png" class="interpolation-image" alt="Teaser image.">
+      <h2 class="subtitle has-text-centered">
+        Subject Fidelity Optimization (SFO) enhances subject fidelity in zero-shot subject-driven text-to-image generation by introducing negative targets and a comparison-based learning signal, explicitly guiding the model on which aspects are desirable and which are not.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present Subject Fidelity Optimization (SFO), a novel comparative learning framework for zero-shot subject-driven generation that enhances subject fidelity. Beyond supervised fine-tuning methods that rely only on positive targets and use the diffusion loss as in the pre-training stage, SFO introduces synthetic negative targets and explicitly guides the model to favor positives over negatives through pairwise comparison. For negative targets, we propose Condition-Degradation Negative Sampling (CDNS), which automatically generates distinctive and informative negatives by intentionally degrading visual and textual cues without expensive human annotations. Moreover, we reweight the diffusion timesteps to focus finetuning on intermediate steps where subject details emerge. Extensive experiments demonstrate that SFO with CDNS significantly outperforms baselines in terms of both subject fidelity and text alignment on a subject-driven generation benchmark.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+</section>
+
+
+<!-- Methods section -->
+<Section>
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Methods</h2>
+    
+    <div class="column is-full-width">
+      <div class="content has-text-justified">
+        <img src="static/images/framework.png">
+        <p>
+          Conventional zero-shot, subject-driven text-to-image (TTI) approaches use supervised fine-tuning (SFT) on triplets—reference image, target text, and target image—so the model implicitly imitates the subject without clear guidance on which attributes matter. Subject Fidelity Optimization (SFO) replaces each triplet with a quadruplet by adding a deliberately low-fidelity negative target. The negatives are generated from supervised fine-tuned model by Condition-Degradation Negative Sampling (CDNS), which intentionally degrades both the reference image and the prompt to amplify failure cases and generate diverse counter-examples. Training then employs a pairwise preference objective that drives the model to score the positive higher than its paired negative, while logit-normal timestep sampling concentrates learning on denoising stages where subject details emerge. This synergy of CDNS, comparison learning, and timestep reweighting sharply improves subject fidelity and maintains text alignment, outperforming previous zero-shot methods without human-labeled rewards or per-subject tuning.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</Section>
+<!-- Methods section -->
+
+
+<!-- Results -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered"> Results </h2>
+    
+    <div class="column is-full-width">
+      <div class="columns is-centered has-text-centered is-variable">
+        <div class="column is-full-width">
+          <img src="static/images/results.png" width="100%" class="shadow-style">
+          <p>
+            SFO demonstrates high-quality zero-shot subject-driven text-to-image generation, achieving both strong subject fidelity and accurate text alignment through comparison-based learning.
+          </p>
+        </div>
+      </div>    
+    </div>
+
+  </div>
+</section>
+<!-- Results -->
+
+<!-- Qualitative Comparisons -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered"> Qualitative Comparisons </h2>
+    
+    <div class="column is-full-width">
+      <div class="columns is-centered has-text-centered is-variable">
+        <div class="column is-full-width">
+          <img src="static/images/qual_comp.png" width="100%" class="shadow-style">
+          <p>
+            Our SFO shows substantial quality gains over various zero-shot subject-driven text-to-image methods, particularly in fine details. It also outperforms our supervised-fine-tuned base model, OminiControl, thereby highlighting the necessity of comparison-based learning.
+          </p>
+        </div>
+      </div>    
+    </div>
+
+  </div>
+</section>
+<!-- Qualitative Comparisons -->
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{shin2025negativeguidedsubjectfidelityoptimization,
+      title={Negative-Guided Subject Fidelity Optimization for Zero-Shot Subject-Driven Generation}, 
+      author={Chaehun Shin and Jooyoung Choi and Johan Barthelemy and Jungbeom Lee and Sungroh Yoon},
+      year={2025},
+      eprint={2506.03621},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2506.03621}, 
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <!-- <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a> -->
+      <a class="icon-link" href="https://github.com/chaehunshin" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
